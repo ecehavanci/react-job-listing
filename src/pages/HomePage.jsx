@@ -11,7 +11,7 @@ function HomePage() {
 
             <Hero title="Test Title" subtitle="Test Subtitle" />
             <HomeCards />
-            <JobListings />
+            <JobListings isHome={true}/>
             <ViewAllJobs />
 
         </>
