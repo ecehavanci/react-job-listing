@@ -53,19 +53,35 @@ function EditJob({ editJob }) {
         setContactPhone(e.target.value);
     }
 
-    const submitForm = (e) => {
-        e.preventDeafult();
-        try {
-            // const editedJob = { id, title, type, location, description, salary, company: { name: companyName, description: companyDesc, contactEmail, contactPhone } };
-            // editJob(editedJob);
-            toast.success('Job Successfully Edited.');
-            alert(id);
-            return navigate(`/jobs/${id}`); //navigate to /jobs page
-        } catch (error) {
-            console.log(error);
-        }
 
-    }
+    const submitForm = async (e) => {
+        e.preventDefault(); // Prevent default form submission behavior
+
+        const editedJob = {
+            id,
+            title,
+            type,
+            location,
+            description,
+            salary,
+            company: {
+                name: companyName,
+                description: companyDesc,
+                contactEmail,
+                contactPhone
+            }
+        };
+
+        try {
+            await editJob(editedJob); // Ensure editJob is awaited if it's an async function
+            toast.success('Job Successfully Edited.');
+            navigate(`/jobs/${id}`); // Navigate to /jobs page
+        } catch (error) {
+            console.error("Failed to edit job:", error);
+            toast.error('Failed to edit job.');
+        }
+    };
+
 
     return (
         <section className="bg-indigo-50">
