@@ -2,7 +2,7 @@
   "jobs": [
     {
       "id": "1",
-      "title": "Senior React DE1122333",
+      "title": "Senior React DEV",
       "type": "Remote",
       "location": "Boston, MA",
       "description": "We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript, with experience working with modern JavaScript frameworks such as React or Angular.",
@@ -124,6 +124,20 @@
         "description": "rrrrrrrr",
         "contactEmail": "dfgfdg@gmail.com",
         "contactPhone": "rrrrrrrrr"
+      }
+    },
+    {
+      "id": "1366",
+      "title": "React Dev",
+      "type": "Part-Time",
+      "location": "Miami",
+      "description": "Job Req.",
+      "salary": "$175K - 200K",
+      "company": {
+        "name": "New Tech",
+        "description": "fffghfg",
+        "contactEmail": "dfgfdg@gmail.com",
+        "contactPhone": "fghfgh"
       }
     }
   ]

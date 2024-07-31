@@ -9,7 +9,7 @@ function HomePage() {
     return (
         <>
 
-            <Hero title="Test Title" subtitle="Test Subtitle" />
+            <Hero title="React Jobs" subtitle="A website for listing jobs." />
             <HomeCards />
             <JobListings isHome={true}/>
             <ViewAllJobs />
